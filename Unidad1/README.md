@@ -4,7 +4,6 @@ Nombre: Oscar Ortiz Bravo
 
 Idea de proyecto: Aplicación que regrese información variada acerca de grupos musicales
 
-
 ## **Códigos de Respuesta HTTP**
 
 Los códigos de respuesta HTTP son respuestas que el servidor devuelve al cliente para indicar el resultado de una solicitud. Se agrupan en diferentes categorías:
