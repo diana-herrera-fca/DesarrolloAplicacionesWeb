@@ -1,3 +1,5 @@
+# Yair Guerra 
+Propuesta de actividad. Realizar un juego de memorama. Donde los jugadores tengan que encontrar cartas iguales.  
 # Códigos de Respuesta HTTP y Explicación del Código HTML y JavaScript
 
 ## **Códigos de Respuesta HTTP**
