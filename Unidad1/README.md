@@ -6,11 +6,6 @@ una aplicacion que tenga que ver con los temas esotericos o tarot
 astrologicos y de numerologia, tal vez tiradas de cartas 
 o una aplicacion aprender a leer las cartas 
 
-
-
-
-
-
 ## **Códigos de Respuesta HTTP**
 
 Los códigos de respuesta HTTP son respuestas que el servidor devuelve al cliente para indicar el resultado de una solicitud. Se agrupan en diferentes categorías:
