@@ -1,5 +1,5 @@
-Daniel Iram González Portilla
-Proyecto: ahorcado
+Daniel Iram González Portilla.
+Proyecto: ahorcado.
 
 # Códigos de Respuesta HTTP y Explicación del Código HTML y JavaScript
 
