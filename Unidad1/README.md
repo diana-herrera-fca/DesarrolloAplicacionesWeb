@@ -1,5 +1,5 @@
 #Daniel Diaz
-#Proyecto pagina de comida
+#Proyecto pagina de comidas 
 
 # Códigos de Respuesta HTTP y Explicación del Código HTML y JavaScript
 
