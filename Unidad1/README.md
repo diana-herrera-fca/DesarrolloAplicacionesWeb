@@ -1,5 +1,9 @@
 # Códigos de Respuesta HTTP y Explicación del Código HTML y JavaScript
 
+## Nombre: Andrés Camacho Bolaños
+
+## **Proyecto: App Web que utilice una API para recetas de repostería**
+
 ## **Códigos de Respuesta HTTP**
 
 Los códigos de respuesta HTTP son respuestas que el servidor devuelve al cliente para indicar el resultado de una solicitud. Se agrupan en diferentes categorías:
