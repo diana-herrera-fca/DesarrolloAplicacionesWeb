@@ -1,7 +1,6 @@
 # Códigos de Respuesta HTTP y Explicación del Código HTML y JavaScript
 Nombre:Antonio Hernandez Berrios
 
-
 Idea de proyecto: TIENDA DE GESTION de inventario
 
 ## **Códigos de Respuesta HTTP**
