@@ -1,3 +1,8 @@
+
+
+Rafael Juarez
+Idea de proyecto: Inventario de Ferreteria
+
 # Códigos de Respuesta HTTP y Explicación del Código HTML y JavaScript
 
 ## **Códigos de Respuesta HTTP**
