@@ -1,5 +1,5 @@
 //Ana Paola Linares Guzman
-//Propuesta de proyecto: Catalogo Ternurines
+//Propuesta de proyecto: Catalogo Ternurines.
 # Códigos de Respuesta HTTP y Explicación del Código HTML y JavaScript
 
 ## **Códigos de Respuesta HTTP**
