@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica de Métodos HTTP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Prueba de Métodos HTTP</h1>
+
+<h2>Ingresar Datos</h2>
+<label for="name">Nombre:</label>
+<input type="text" id="name" placeholder="Escribe un nombre">
+<button id="sendData">POST: Enviar Datos</button>
+
+<h2>Obtener Datos</h2>
+<button id="getData">GET: Obtener Datos</button>
+
+<h2>Eliminar Datos</h2>
+<button id="deleteData">DELETE: Eliminar Datos</button>
+
+<h3>Respuesta del Servidor:</h3>
+<div id="response"></div>
+
+<script>
+
+    document.getElementById("sendData").addEventListener("click", () => {
+        const name = document.getElementById("name").value;
+        if (!name) {
+            alert("Por favor, ingresa un nombre.");
+            return;
+        }
+
+        fetch("https://jsonplaceholder.typicode.com/users", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ name: name })
+        })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("response").innerText = "Datos enviados: " + JSON.stringify(data, null, 2);
+            })
+            .catch(error => console.error("Error en POST:", error));
+    });
+
+    document.getElementById("getData").addEventListener("click", () => {
+
+        fetch(`https://jsonplaceholder.typicode.com/users/1`)
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("response").innerText = "Datos recibidos: " + JSON.stringify(data, null, 2);
+            })
+            .catch(error => console.error("Error en GET:", error));
+    });
+
+    document.getElementById("deleteData").addEventListener("click", () => {
+        fetch(`https://jsonplaceholder.typicode.com/users/1`, { method: "DELETE" })
+            .then(response => {
+                document.getElementById("response").innerText = "Recurso eliminado exitosamente.";
+                createdUserId = null;
+            })
+            .catch(error => console.error("Error en DELETE:", error));
+    });
+</script>
+</body>
+</html>
