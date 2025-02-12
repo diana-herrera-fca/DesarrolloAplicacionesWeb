@@ -1,7 +1,6 @@
 # Códigos de Respuesta HTTP y Explicación del Código HTML y JavaScript
 
-paulina santillan idea de proyecto 
-
+paulina santillan idea de proyecto
 una aplicacion que tenga que ver con los temas esotericos o tarot 
 astrologicos y de numerologia, tal vez tiradas de cartas 
 o una aplicacion aprender a leer las cartas 
