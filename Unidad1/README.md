@@ -1,5 +1,5 @@
 Ramos Espinoza Martin Sebastian
-Proyecto: Sopa de letras
+Proyecto: Sopa de letras.
 
 
 # Códigos de Respuesta HTTP y Explicación del Código HTML y JavaScript
