@@ -1,3 +1,8 @@
+
+Angel Gutierrez
+Idea de proyecto: Pagina de una Escuela
+
+
 # Códigos de Respuesta HTTP y Explicación del Código HTML y JavaScript
 
 ## **Códigos de Respuesta HTTP**
