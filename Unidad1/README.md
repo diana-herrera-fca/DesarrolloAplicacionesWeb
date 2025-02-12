@@ -3,7 +3,7 @@
 ## **Códigos de Respuesta HTTP**
 Ariel Jesus Bueno Vazquez
 Idea de proyecto:
-Pagina de seguimiento de jugadores de futbol en la liga mx
+Pagina de seguimiento de jugadores de futbol en la liga mx 
 
 Los códigos de respuesta HTTP son respuestas que el servidor devuelve al cliente para indicar el resultado de una solicitud. Se agrupan en diferentes categorías:
 
