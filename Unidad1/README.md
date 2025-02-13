@@ -1,5 +1,9 @@
 # Códigos de Respuesta HTTP y Explicación del Código HTML y JavaScript
 
+Nombre: Ian Carlos Martínez Ramírez 
+
+Idea de proyecto: Aplicación que te recomienda algún estilo o música en específico según tu estado de ánimo
+
 ## **Códigos de Respuesta HTTP**
 
 Los códigos de respuesta HTTP son respuestas que el servidor devuelve al cliente para indicar el resultado de una solicitud. Se agrupan en diferentes categorías:
