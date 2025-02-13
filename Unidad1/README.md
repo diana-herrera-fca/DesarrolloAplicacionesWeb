@@ -1,6 +1,6 @@
 # Códigos de Respuesta HTTP y Explicación del Código HTML y JavaScript
 
-Nombre: Ian Carlos Martínez Ramírez 
+Nombre: Ian Carlos Martínez Ramírez.
 
 Idea de proyecto: Aplicación que te recomienda algún estilo o música en específico según tu estado de ánimo
 
