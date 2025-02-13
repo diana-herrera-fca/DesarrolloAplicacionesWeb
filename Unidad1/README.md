@@ -2,7 +2,7 @@
 
 Nombre: Ian Carlos Martínez Ramírez.
 
-Idea de proyecto: Aplicación que te recomienda algún estilo o música en específico según tu estado de ánimo.
+Idea de proyecto: Aplicación que te recomienda algún estilo o música en específico según tu estado de ánimo
 
 ## **Códigos de Respuesta HTTP**
 
