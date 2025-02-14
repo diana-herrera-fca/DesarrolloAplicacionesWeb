@@ -1,3 +1,7 @@
+Andrés Daniel García Brizuela
+Proyecto: Catalogos de 3 albumes escenciales recomendados para empezar a 
+escuchar algún genero musical. 
+
 # Códigos de Respuesta HTTP y Explicación del Código HTML y JavaScript
 
 ## **Códigos de Respuesta HTTP**
