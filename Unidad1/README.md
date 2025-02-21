@@ -1,5 +1,12 @@
 # Códigos de Respuesta HTTP y Explicación del Código HTML y JavaScript
 
+Nombre:
+Alexis Santiago
+
+Idea de proyecto:
+Proyectar PR en base a una entrada de *Peso*, *RPE*, y número de repeticioones
+
+
 ## **Códigos de Respuesta HTTP**
 
 Los códigos de respuesta HTTP son respuestas que el servidor devuelve al cliente para indicar el resultado de una solicitud. Se agrupan en diferentes categorías:
