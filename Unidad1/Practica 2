@@ -1,0 +1,58 @@
+<html lang="en">
+<meta charset="UTF-8">
+
+<head>
+
+    <title>Práctica 2</title>
+
+</head>
+
+<header>
+
+    Bueno Vazquez Ariel Jesus
+
+</header>
+
+<body>
+
+<br>
+<h1>Presentación</h1>
+<br>
+<p>Tengo 20 años estudio la carrera de informatica.</p>
+
+<h2>Gustos:</h2>
+
+<table>
+    <thead>Lista de cosas que me gustan</thead>
+    <tr_>Son estas:</tr_>
+</table>
+
+<ul>
+    <li>Jugar Futbol</li>
+    <img src="Practica2_imagenes/gaming_article.png" alt="Videojuegos" width="500" height="600">
+    <li>Salir con mis amigos</li>
+    <img src="Practica2_imagenes/music.jpg" alt="Múscia" width="500" height="600">
+    <li>Ir a las luchas</li>
+    <img src="Practica2_imagenes/Furina-Genshin-Impact-Wallpaper-HD-451231413r1311231-231109-214640.png" alt="Anime" width="1024" height="526">
+    <li>Ir a conciertos</li>
+    <img src="Practica2_imagenes/71FobkNjTZL.jpg" alt="Tocar piano" width="500" height="600">
+    <li>Dormir</li>
+    <img src="Practica2_imagenes/image.jpg" alt="Hedgehog" width="500" height="600">
+</ul>
+
+<h3>Github:</h3>
+<a href="https://github.com/abueno320057241">Cuenta de Github</a>
+
+</body>
+
+<div>
+    <p>Bueno Vazquez Ariel Jesus</p>
+</div>
+
+<footer>
+
+    2025. Copyright.<br>Todos los derechos reservados.
+
+</footer>
+
+</html>
