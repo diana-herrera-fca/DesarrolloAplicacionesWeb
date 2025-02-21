@@ -1,19 +1,62 @@
 <html lang="en">
+    <meta charset="UTF-8">
     <head>
-        <title>Practica2</title>
+        <title>Practica2 Pérez Noyola Juan Pablo</title>
     <head>
-    <header>
-        Practica2
-    </header>
+        <header>
+            <h1 class="title"> Practica2 </h1>
+        </header>
+    <style>
+        body{
+            background: darksalmon;
+        }
+        .title{
+            text-align: center;
+            color: blue;
+        }
+        .sub-title{
+            text-align: center;
+            color:green;
+        }
+        #link {
+          front-size: 2rem;
+            color: blueviolet;
+        }
+        p {
+            front-size: larger;
+            color:darkcyan;
+        }
+        img{
+            align-self: center;
+        }
+        .text{
+           border: dimgray;
+            background-color: saddlebrown;
+            text-align: center;
+            margin-left: 20rem;
+            margin-right: 20rem;
+            padding: 2rem;
+        }
+        #contenido{
+            border: cornflowerblue;
+            background-color: saddlebrown;
+            text-align: left;
+            margin-left: 20rem;
+            margin-right: 20rem;
+            padding: 2rem;
+        }
+    </style>
     <body>
-    <h1>Practica2</h1>
-    <h2>Presentacion</h2>
-    <h3>------------------------------------------------------------------------------------------------------------</h3>
-    <br> //salto linea
-    <p>A continuacion presento mi nombre, lista de cosas que me gustan, imagen y mi enlace a GitHub</p> <--parrafo-->
     <div>
-        <p>Mi nombre: Juan Pablo Perez Noyola</p>
+    <h2 class="sub-title">Presentacion</h2>
     </div>
+    <div class="text">
+    <h3>------------------------------------------------------------------------------------------------------------</h3>
+    <br>
+    <p>A continuacion presento mi nombre, lista de cosas que me gustan, imagen y mi enlace a GitHub</p>
+    </div>
+    <div id="contenido">
+        <p>Mi nombre: Juan Pablo Pérez Noyola</p>
     <table>
         <thead>Hobies:</thead>
         <br>
@@ -21,16 +64,18 @@
     </table>
     <ul>
         <li>Deportes, en especial Basquetball</li>
-        <img alt="" src="bal.jpg"/> <--enlace-->
+        <br>
+        <img alt="" src="bal.jpg"/>
+        <br>
         <li>Ver series</li>
         <img alt="" src="bbad.png"/>
+        <br>
         <li>Salir con amigos</li>
-
+        <br>
     </ul>
-        <div>
             <p>Mi enlace a gitHub:</p>
-            <a href="https://github.com/Juanpa-jpg">github</a>
-        </div>
+            <a id="link" href="https://github.com/Juanpa-jpg">github</a>
+    </div>
     </body>
 </html>
 
