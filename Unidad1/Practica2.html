@@ -1,26 +1,39 @@
 <!--Nombre, presentacion, lista de cosas que les guste, imagen, enlace a su cuenta github-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <html lang="en">
+<body style="background-color: #efe1d4;">
 <head>
 <Title> Mi presentacion </Title>
 </head>
+<style>
+    .title {color: #ec9140; text-align: center;}
+    .subtitle {color: #ec9140;}
+    #description {font-size: larger; font-weight: bold; color: #eca950}
+    #Link {font-size: larger; color: #553927;}
+    p {color: #e8e9ed; background-color: #5e4739; text-align: center; margin-left: 20rem; margin-right: 20rem; padding: 2rem}
+    img {align-self: center;}
+    .text p {font-size: larger; color: #efe1d4;}
+    .lista {font-size: larger; color: #c05d1a; margin-right: 20rem; margin-left: 20rem;}
+</style>
 <header>
-    Practica 2
+    <h1 class="title"> Practica 2 </h1>
 </header>
     <body>
     <center> <h1> Mi nombre es Ana Paola</h1> </center>
     <center> <h2> Muchos me dicen Ana y otros me llaman por el apodo Night </h2> </center>
     <center> <h3> Me gusta dibujar, tocar la mandolina, escuchar musica y hacer diferentes manualidades </h3> </center>
-    <div>
-        <p> Pero si eso no es suficiente, aqui hay una lista de cosas que me gusta hacer: </p>
+    <div class="">
+        <p> Pero si eso no es suficiente, aqui hay una lista de cosas que me gusta hacer: </p> <!--Parrafo-->
     </div>
     <div> </div>
     <br> <!--Salto de linea-->
-    <p> </p> <!--Parrafo-->
     <table>
         <tr>
-            <th>Me gusta</th>
+            <th class="subtitle">Me gusta</th>
         </tr>
     </table>
+    <div class="lista">
     <ul> <!--lista-->
         <li>Los perros y gatos</li>
         <li>Jugar videojuegos</li>
@@ -32,12 +45,13 @@
         <li>Estar con la tuna (grupo musical)</li>
         <li>Pasar el tiempo en el laboratorio Swift</li>
     </ul>
-    <div> </div>
-    <a href="https://github.com/AnaLinares-NA">Mi Uusario en GitHub</a> <!--Enlace-->
+    </div>
+    <a id="Link" href="https://github.com/AnaLinares-NA">Mi Usuario en GitHub</a> <!--Enlace-->
     <br>
-    <img alt="Mi personalidad se basa en:" src="https://avatars.githubusercontent.com/u/178621566?v=4"> <!--Imagen-->
+    <img class="subtitle" alt="Mi personalidad se basa en:" src="https://avatars.githubusercontent.com/u/178621566?v=4"> <!--Imagen-->
 </body>
 <footer>
     Todos los derechos reservados 2025
 </footer>
+</body>
 </html>
