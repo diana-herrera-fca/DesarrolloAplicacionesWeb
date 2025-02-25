@@ -1,0 +1,37 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 16px;
+}
+h1 {
+    text-align: center;
+    color: rgb(226, 83, 43);
+}
+
+span {
+    font-size: 2rem;
+}
+
+h2 {
+    text-align: start;
+    color: rgb(237, 100, 100);
+}
+
+h3 {
+    text-align: start;
+    color: rgba(255, 0, 0, 0.866);
+}
+.hob {
+    text-align: start;
+    color: brown;
+}
+
+
+body {
+    background-color: lightslategray; 
+  }
+
+.icono {
+    text-align: start;
+}
