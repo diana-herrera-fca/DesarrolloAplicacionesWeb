@@ -41,7 +41,7 @@ function getPerimeter(length, width) {
     // Write your code here
     let perimeter = 2*(length +width);
     return perimeter;
-
+j
 
 }
 
