@@ -306,3 +306,29 @@ function sides(literals, ...expressions) {
 function modifyArray(nums) {
     return nums.map(num => num % 2 === 0 ? num * 2 : num * 3);
 }
+
+/* Ex18 
+    * Bitwise operators
+*/
+function getMaxLessThanK(n, k) {
+    let max = 0;
+    for (let a = 1; a <= n; a++) {
+        for (let b = a + 1; b <= n; b++) {
+            let result = a & b;
+            if (result < k && result > max) {
+                max = result;
+            }
+        }
+    }
+    return max;
+}
+
+/* Ex19*/
+// The days of the week are: "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
+function getDayName(dateString) {
+    let dayName;
+    const date = new Date(dateString);
+    const options = { weekday: 'long' };
+    dayName = new Intl.DateTimeFormat('en-US', options).format(date);
+    return dayName;
+}
