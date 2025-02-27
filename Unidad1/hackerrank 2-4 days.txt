@@ -1,0 +1,196 @@
+Hackerrank days 2-4
+Day 2: Loops
+function vowelsAndConsonants(s) {
+    for (let i=0;i<s.length;i++){
+        
+        if(s[i] =="a" || s[i]=="e" || s[i]=="i" || s[i]=="o"  || s[i]=="u"){
+            console.log(s[i]);            
+        }
+    }
+        
+        for (let i=0;i<s.length;i++){
+        if (s[i] !="a" && s[i]!="e" && s[i]!="i" && s[i]!="o"  && s[i]!="u"){
+            console.log(s[i]);
+        }
+    }   
+}
+
+
+
+
+Day 2: Conditional Statements: If-Else
+
+function getGrade(score) {
+    let grade;
+    // Write your code here
+    
+    if(score > 25 && score <=30){
+        grade="A";
+    }
+    
+    
+    else if (score > 20 && score <=25){
+        grade="B";
+    }
+    
+    
+    else if (score > 15 && score <=20){
+        grade="C";
+    }
+    
+    else if (score > 10 && score <=15){
+        grade="D";
+        
+    }
+    
+    else if (score > 5 && score <=10){
+        grade="E";
+    }
+    
+    else if (score >0 && score <=5){
+        grade="F";
+    }
+    return grade;
+}
+
+
+
+
+
+Day 2: Conditional Statements: Switch
+
+function getLetter(s) {
+    let letter;
+    // Write your code here
+    switch(true){
+        
+        case "aeiou".includes(s[0]):
+            
+            letter="A";
+        break;
+        
+        case "bcdfg".includes(s[0]):
+        
+            letter="B";
+        break;
+    
+        case "hjklm".includes(s[0]):
+       
+            letter="C";
+        break;    
+          
+        case "npqrstvwxyz".includes(s[0]):
+        
+            letter="D";
+            
+        
+    }
+    return letter;
+}
+
+
+
+
+Day 3: Arrays
+function getSecondLargest(nums) {
+    // Complete the function
+    let largest ,second;
+    largest=second = Number.MIN_VALUE
+    for(let i=0; i < nums.length; i++){
+      if(nums[i] > largest){  
+        second=largest;
+        largest=nums[i];
+      }
+    else {
+        if(nums[i] > second && nums[i] !==largest)
+            second=nums[i];
+        }
+    }
+    return second;
+
+}
+
+
+
+Day 3: Try,Catch, and Finally
+
+function reverseString(s) {
+    try{
+       s=s.split("").reverse().join("") 
+    }catch(error){
+        console.log(error.message);
+        
+    } finally{
+        console.log(s);
+    }
+    
+}
+
+
+Day 3: Throw
+
+function isPositive(a) {
+    if(a > 0 ){
+        return "YES";
+    }else if(a == 0){
+            
+    throw new Error("Zero Error");
+    }else{ 
+        throw new Error("Negative Error");
+    }
+}
+
+
+
+Day 4 : Create a Rectangle Object
+
+function Rectangle(a, b) {
+    
+        var object={
+            length:a,
+            width:b,
+            perimeter:2*(a+b),
+            area:a*b
+        }
+        
+        return object;
+        
+    
+    
+}
+
+
+Day 4: Count Objects
+
+function getCount(objects) {
+    var n=0;
+    for(let i=0;i<objects.length;i++){
+        if(objects[i].x==objects[i].y){
+            
+         n++;
+            
+    }
+    
+    }
+    
+    return n;   
+
+}
+
+Day 4: Classes
+
+class Polygon {
+    constructor(array){
+        this.arreglo=array;
+    } 
+    perimeter(){
+        
+        var suma=0;
+        for(let i=0;i<this.arreglo.length;i++){
+            suma+=this.arreglo[i];   
+        }
+        return suma;
+    }
+    
+
+ }
