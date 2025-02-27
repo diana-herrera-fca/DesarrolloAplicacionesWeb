@@ -305,3 +305,468 @@ function main() {
     console.log(getGrade(score));
 }
 
+'use strict';
+
+process.stdin.resume();
+process.stdin.setEncoding('utf-8');
+
+let inputString = '';
+let currentLine = 0;
+
+process.stdin.on('data', inputStdin => {
+    inputString += inputStdin;
+});
+
+process.stdin.on('end', _ => {
+    inputString = inputString.trim().split('\n').map(string => {
+        return string.trim();
+    });
+
+    main();
+});
+
+function readLine() {
+    return inputString[currentLine++];
+}
+
+function getLetter(s) {
+    let firstChar = s.charAt(0);
+
+    switch (true) {
+        case 'aeiou'.includes(firstChar):
+            return 'A';
+        case 'bcdfg'.includes(firstChar):
+            return 'B';
+        case 'hjklm'.includes(firstChar):
+            return 'C';
+        case 'npqrstvwxyz'.includes(firstChar):
+            return 'D';
+    }
+}
+
+
+function main() {
+    const s = readLine();
+
+    console.log(getLetter(s));
+}
+
+'use strict';
+
+process.stdin.resume();
+process.stdin.setEncoding('utf-8');
+
+let inputString = '';
+let currentLine = 0;
+
+process.stdin.on('data', inputStdin => {
+    inputString += inputStdin;
+});
+
+process.stdin.on('end', _ => {
+    inputString = inputString.trim().split('\n').map(string => {
+        return string.trim();
+    });
+
+    main();
+});
+
+function readLine() {
+    return inputString[currentLine++];
+}
+
+/*
+ * Complete the vowelsAndConsonants function.
+ * Print your output using 'console.log()'.
+ */
+function vowelsAndConsonants(s) {
+
+    let vowels=['a','e','i','o','u']
+    for (let i=0; i<s.length; i++){
+        if(vowels.includes(s[i]))
+            console.log(s[i])
+    }
+    for (let i=0; i<s.length; i++){
+        if(!vowels.includes(s[i]))
+            console.log(s[i])
+    }
+}
+
+
+
+function main() {
+    const s = readLine();
+
+    vowelsAndConsonants(s);
+}
+
+'use strict';
+
+process.stdin.resume();
+process.stdin.setEncoding('utf-8');
+
+let inputString = '';
+let currentLine = 0;
+
+process.stdin.on('data', inputStdin => {
+    inputString += inputStdin;
+});
+
+process.stdin.on('end', _ => {
+    inputString = inputString.trim().split('\n').map(string => {
+        return string.trim();
+    });
+
+    main();
+});
+
+function readLine() {
+    return inputString[currentLine++];
+}
+
+function getLetter(s) {
+    let firstChar = s.charAt(0);
+
+    switch (true) {
+        case 'aeiou'.includes(firstChar):
+            return 'A';
+        case 'bcdfg'.includes(firstChar):
+            return 'B';
+        case 'hjklm'.includes(firstChar):
+            return 'C';
+        case 'npqrstvwxyz'.includes(firstChar):
+            return 'D';
+    }
+}
+
+
+function main() {
+    const s = readLine();
+
+    console.log(getLetter(s));
+}
+
+'use strict';
+
+process.stdin.resume();
+process.stdin.setEncoding('utf-8');
+
+let inputString = '';
+let currentLine = 0;
+
+process.stdin.on('data', inputStdin => {
+    inputString += inputStdin;
+});
+
+process.stdin.on('end', _ => {
+    inputString = inputString.trim().split('\n').map(string => {
+        return string.trim();
+    });
+
+    main();
+});
+
+function readLine() {
+    return inputString[currentLine++];
+}
+
+function getLetter(s) {
+    let firstChar = s.charAt(0);
+
+    switch (true) {
+        case 'aeiou'.includes(firstChar):
+            return 'A';
+        case 'bcdfg'.includes(firstChar):
+            return 'B';
+        case 'hjklm'.includes(firstChar):
+            return 'C';
+        case 'npqrstvwxyz'.includes(firstChar):
+            return 'D';
+    }
+}
+
+
+function main() {
+    const s = readLine();
+
+    console.log(getLetter(s));
+}
+
+'use strict';
+
+process.stdin.resume();
+process.stdin.setEncoding('utf-8');
+
+let inputString = '';
+let currentLine = 0;
+
+process.stdin.on('data', inputStdin => {
+    inputString += inputStdin;
+});
+
+process.stdin.on('end', _ => {
+    inputString = inputString.trim().split('\n').map(string => {
+        return string.trim();
+    });
+
+    main();
+});
+
+function readLine() {
+    return inputString[currentLine++];
+}
+
+/**
+ *   Return the second largest number in the array.
+ *   @param {Number[]} nums - An array of numbers.
+ *   @return {Number} The second largest number in the array.
+ **/
+function getSecondLargest(nums) {
+    let primero, segundo;
+    primero = segundo = Number.MIN_VALUE;
+    for (let i = 0; i < nums.length; i++) {
+        if (nums[i] > primero) {
+            segundo = primero;
+            primero = nums[i]
+        } else{
+            if(nums[i]> segundo && nums[i]!==primero){
+                segundo=nums[i]
+            }
+        }
+    }
+    return segundo;
+}
+
+
+function main() {
+    const n = +(readLine());
+    const nums = readLine().split(' ').map(Number);
+
+    console.log(getSecondLargest(nums));
+}
+
+'use strict';
+
+process.stdin.resume();
+process.stdin.setEncoding('utf-8');
+
+let inputString = '';
+let currentLine = 0;
+
+process.stdin.on('data', inputStdin => {
+    inputString += inputStdin;
+});
+
+process.stdin.on('end', _ => {
+    inputString = inputString.trim().split('\n').map(string => {
+        return string.trim();
+    });
+
+    main();
+});
+
+function readLine() {
+    return inputString[currentLine++];
+}
+
+/*
+ * Complete the reverseString function
+ * Use console.log() to print to stdout.
+ */
+function reverseString(s) {
+    try{
+        let letras=s.split('');
+        letras.reverse();
+        console.log(letras.join(''));
+    }
+    catch(e){
+        console.log(e.message);
+        console.log(s)
+    }
+
+}
+
+
+function main() {
+    const s = eval(readLine());
+
+    reverseString(s);
+}
+
+'use strict';
+
+process.stdin.resume();
+process.stdin.setEncoding('utf-8');
+
+let inputString = '';
+let currentLine = 0;
+
+process.stdin.on('data', inputStdin => {
+    inputString += inputStdin;
+});
+
+process.stdin.on('end', _ => {
+    inputString = inputString.trim().split('\n').map(string => {
+        return string.trim();
+    });
+
+    main();
+});
+
+function readLine() {
+    return inputString[currentLine++];
+}
+
+/*
+ * Complete the isPositive function.
+ * If 'a' is positive, return "YES".
+ * If 'a' is 0, throw an Error with the message "Zero Error"
+ * If 'a' is negative, throw an Error with the message "Negative Error"
+ */
+function isPositive(a) {
+    if(a>0) return "YES";
+    else if (a==0) throw new Error("Zero Error")
+    else throw new Error("Negative Error")
+}
+
+
+function main() {
+    const n = +(readLine());
+
+    for (let i = 0; i < n; i++) {
+        const a = +(readLine());
+
+        try {
+            console.log(isPositive(a));
+        } catch (e) {
+            console.log(e.message);
+        }
+    }
+}
+
+'use strict';
+
+process.stdin.resume();
+process.stdin.setEncoding('utf-8');
+
+let inputString = '';
+let currentLine = 0;
+
+process.stdin.on('data', inputStdin => {
+    inputString += inputStdin;
+});
+
+process.stdin.on('end', _ => {
+    inputString = inputString.trim().split('\n').map(string => {
+        return string.trim();
+    });
+
+    main();
+});
+
+function readLine() {
+    return inputString[currentLine++];
+}
+
+/*
+ * Complete the Rectangle function
+ */
+function Rectangle(a, b) {
+    return{
+        length: a,
+        width: b,
+        perimeter: 2*(a+b),
+        area: a*b
+    }
+}
+
+
+function main() {
+    const a = +(readLine());
+    const b = +(readLine());
+
+    const rec = new Rectangle(a, b);
+
+    console.log(rec.length);
+    console.log(rec.width);
+    console.log(rec.perimeter);
+    console.log(rec.area);
+}
+
+'use strict';
+
+process.stdin.resume();
+process.stdin.setEncoding('utf-8');
+
+let inputString = '';
+let currentLine = 0;
+
+process.stdin.on('data', inputStdin => {
+    inputString += inputStdin;
+});
+
+process.stdin.on('end', _ => {
+    inputString = inputString.trim().split('\n').map(string => {
+        return string.trim();
+    });
+
+    main();
+});
+
+function readLine() {
+    return inputString[currentLine++];
+}
+
+/*
+ * Return a count of the total number of objects 'o' satisfying o.x == o.y.
+ *
+ * Parameter(s):
+ * objects: an array of objects with integer properties 'x' and 'y'
+ */
+function getCount(objects) {
+    let count = 0;
+    objects.forEach(obj=>{
+        if(obj.x==obj.y)count++;
+    });
+    return count;
+}
+
+
+function main() {
+    const n = +(readLine());
+    let objects = [];
+
+    for (let i = 0; i < n; i++) {
+        const [a, b] = readLine().split(' ');
+
+        objects.push({x: +(a), y: +(b)});
+    }
+
+    console.log(getCount(objects));
+}
+
+/*
+ * Implement a Polygon class with the following properties:
+ * 1. A constructor that takes an array of integer side lengths.
+ * 2. A 'perimeter' method that returns the sum of the Polygon's side lengths.
+ */
+class Polygon {
+    constructor(arr_values){
+        this.arr=arr_values;
+    }
+    perimeter(){
+        let num = 0;
+        for(let i=0; i<this.arr.length;i++){
+            num+=this.arr[i];
+        }
+        return num;
+    }
+}
+
+const rectangle = new Polygon([10, 20, 10, 20]);
+const square = new Polygon([10, 10, 10, 10]);
+const pentagon = new Polygon([10, 20, 30, 40, 43]);
+
+console.log(rectangle.perimeter());
+console.log(square.perimeter());
+console.log(pentagon.perimeter());
