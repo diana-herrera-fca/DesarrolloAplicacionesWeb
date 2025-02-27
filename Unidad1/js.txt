@@ -1,0 +1,1009 @@
+var nombre_variable = declara una variable (enfoque de funcion)
+let nombre_variable = declara una variable ( enfoque de bloque)
+console.log(nombre_variable)  = imprimir texto en pantalla
+
+concatenar cadenas
+cadena1 + cadena2
+
+nombre_variable.lenght = devuelve como resultado la longitud de la cadena
+console.log(cadena[valor_indice]) = imprime solo el caracter del indice especificado
+
+-----------------------------------------------------------------------------
+				condicionales 
+if (condicion){
+
+
+	bloque_codigo;
+
+}
+
+else if (condicion){
+
+	bloque_codigo;
+}
+
+
+else {
+
+	bloque_codigo;
+}
+
+
+----------------------- Ejemplos  de sentencias condicionales -------------------
+let num = 40;
+
+if(num > 10 && num == 19){
+
+  console.log("Tu valor es: "  + num )
+
+} else {
+
+    console.log("El valor " + num + " no cumple con las condiciones")
+}
+
+
+
+
+var num;
+function clasificarValor(num){
+    
+        if(num % 2  == 0){
+            console.log("El numero " + num + " es divisible entre 2");
+        }else if (num % 3 == 0){
+            console.log( "El numero " + num  + " es divisible entre 3");
+        }else if (num % 4 == 0){
+            console.log("El numero" + num + " es divisible entre 4")
+        }else{
+            console.log("El numero " + num + "no es divisible en ninguna de las opciones" )
+        }
+}
+
+clasificarValor(6)
+
+------------------------------------Arreglos  ---------------------
+//Arreglos anidados
+
+var listaEstudiantes = [ ["Nora", 67], ["Angel" , 81]]
+
+var listaProductos = [ ["Camisa", 5.67, "S134"] , ["Celular", 250 , "S356"] , ["Zapatos", 56, "AD12"] ]
+
+console.log(listaProductos[0])
+
+
+//Modificar arreglos
+var numeros = [ 1, 2 ,3, 4, 5, 6, 7 ,8 ,9 ,10 ]
+
+numeros[0] = 0
+numeros[1] = [ "Lux", "CVK" ,"BK201"]
+
+
+//Principales metodos para arreglos
+.push() = agrega un  elemento al final del arreglo
+.pop() = elimina el ultimo elemento de un arreglo
+.shift() = elimina el primer elemento del arreglo
+.unshift = agrega un elemento al principio de un arreglo
+
+// Acceder a arreglos multidimensionales ( arreglos anidados dentro de un arreglo principal)
+
+
+var miArreglo = [ [1 ,2 ,3 ], [4,5,6] , [7,8,9] ];
+
+console.log(miArreglo[0][1])
+
+
+
+//Funciones
+function nombre_funcion(parametros) {
+
+	bloque_codigo;
+
+}
+
+//Llamada a la funcion  
+ nombre_funcion(argumentos) Los argumentos son los valores que se le asignan a los parametros 
+Secuencias de escape
+\'
+
+//variables globales y locales
+
+ Las variables globales funcionan en cualquier parte del codigo
+ Las variables locales solo existen en la funcion donde se declararon
+
+
+//Retornar un valor
+function sumar (a,b){
+
+  return a + b;
+
+
+
+}
+
+
+console.log(sumar(5,3));
+
+
+// Asignar a una variable el valor que retorna una funcion
+function sumar (a,b){
+
+ return a+b;
+}
+
+var resultado= sumar(5,3)
+console.log(resultado)
+
+
+//
+console.log(JSON.stringify(nombre_arreglo)) = muestra el arreglo de una forma mas presentable en la consola
+
+
+// Queue
+En informatica una cola (queue) es una estructura de datos abstracta
+en la cual los elementos se mantienen en orden. Los nuevos elementos se pueden
+añadir al final de la cola y los elementos previos se retiran del principio de la cola.
+
+
+
+//MiniProyecto 1
+
+Define una funcion proximoEnLaFila que tome un arreglo (arreglo) y un elemento (elemento)  como argumentos. Agrega el numero al final del arreglo y luego elimina el primer elemento del arreglo. 
+La funcion proximoEnLaFila debe retonar el elemento que fue removido. 
+
+function proximoEnLaFila(arreglo,numero){
+
+  
+  arreglo.push(numero);
+  return arreglo.shift()
+} 
+
+var miArreglo=[1,2,3,4,5,6,7,8,9,10];
+
+console.log("Arreglo previo\n" + JSON.stringify(miArreglo));
+
+console.log(proximoEnLaFila(miArreglo,11));
+
+console.log("Arreglo actualizado\n" + JSON.stringify(miArreglo));
+
+
+//Valores booleanos
+
+true = verdadero
+false = falso
+
+
+// Mini proyecto 2
+function puntajeGolf(par,golpes){
+    
+    if(golpes == 1){
+        return "Hole in one"
+    }else if(golpes <= par - 2 ){
+        return "Eagle"
+    }else if(golpes == par - 1){
+        return "Birdie"
+    }else if( golpes == par){
+        return "Par"
+    }else if(golpes == par + 1){
+        return "Bogey"
+    }else if(golpes == par + 2){
+        return "Double bogey"
+    }else if(golpes >= par + 3){
+        return "Ya retirate"
+    }else{
+        return "Adios"
+    }
+        
+    
+}
+
+resultadoGolf=puntajeGolf(4,15)
+console.log(resultadoGolf)
+
+
+//Sentencia switch
+
+switch(condicion){
+	  case 1:
+	  bloque_codigo;
+	  break; // Detiene el codigo si se cumple la condicion especificada
+
+
+	  case 2:
+	  bloque_codigo;
+	  break;
+
+
+	  default:
+	  bloque_codigo;
+}
+
+Ejemplo 
+
+function clasificarValor(valor){
+    
+    var respuesta;
+    switch(valor){
+        case 1:
+        	respuesta = "alpha";
+        	break;
+
+        case 2:
+        	respuesta = "beta";
+        	break;
+
+        case 3:
+        	respuesta = "gamma";
+        	break;
+        
+        case 4:
+        	respuesta = "delta";
+    		break;
+        
+	default:
+        	respuesta = "Valor fuera de rango";
+        	break;
+    }
+    return respuesta;
+}
+
+console.log(clasificarValor(4))
+
+
+Ejemplo 2
+
+var producto = "helado";
+
+switch(producto){
+    
+        case "pizza":
+        	console.log("La pizza cuesta 25 pesos");
+                break;
+        
+        case "hamburguesa":
+        	console.log("La hamburguesa cuesta 50 pesos")
+        	break;
+        
+        case "helado":
+        	console.log("El helado cuesta 10 pesos")
+        	break;
+}
+
+
+// Sentencias switch : Multiples casos
+Ejemplo
+
+function clasificarVolumen(valor){
+    var volumen;
+    switch(valor){
+        
+        case 1:
+            volumen = "bajo";
+            break;
+            
+        case 2:
+        case 3:
+            volumen = "intermedio";
+            break;
+            
+            
+        case 4:
+        case 5:
+        case 6:
+                volumen = "Alto";
+                break;
+        
+    }
+    return volumen;
+}
+
+console.log(clasificarVolumen(6));
+
+
+
+// Patron de retorno anticipado
+Cuando se retorna un valor (return) en una funcion, todo el codigo restante de la funcion no se ejecuta.
+
+Ejemplo
+function miFuncion(){
+    
+    console.log("Hola\n");
+    return "Mundo";
+    
+    console.log("Hola y adios");
+    
+    
+    
+}
+
+console.log(miFuncion());
+
+//Obtener la raiz cuadrada de un numero
+Math.sqrt(valor)
+
+
+//Mini proyecto "Conteo de Cartas"
+
+var conteo=0;
+
+function contarCartas(carta){
+    
+    var decision;
+    switch(carta){
+        
+        case 2:
+        case 3:
+        case 4:
+        case 5:
+        case 6:
+            conteo++;
+            break;
+        
+        case 7:
+        case 8:
+        case 9:
+            conteo=0;
+            break;
+        
+        case 10:
+        case 'J':
+        case 'Q':
+        case 'K':
+        case 'A':
+            
+          conteo--;
+          break;
+        
+        default:
+            console.log("Opcion no valida");
+    }
+    
+    
+    if( conteo > 0 ){
+        decision = "Apostar";
+        
+    }else{
+        decision = "Esperar";
+    }
+    
+    return "La decision es: " + decision + " " + "y el conteo es: " + conteo;
+}
+
+
+
+
+--------------------------------- Objetos----------------------------------------
+
+Un objeto es aquel que permite guardar un conjunto de propiedades
+
+Un objeto es una colección de propiedades que definen las caracteristicas del mismo, y una propiedad es una asociación entre un nombre (o clave) y un valor.
+
+
+Ejemplo
+
+var distro = {
+    
+        "nombre" : "Black Arch",
+        "añoLanzamiento" : 2005,
+        "derivado" : "Arch",
+        "gestorPaquetes" : "pacman"
+        
+};
+
+------------------------------------------------------------------------
+
+Acceder a propiedades (Notacion de Punto)
+
+Ejemplo:
+
+console.log(distro.añoLanzamiento);
+------------------------------------------------------------------------
+Acceder a propiedades (Notacion de corchete)
+
+Ejemplo:
+
+console.log(distro["añoLanzamiento"]);
+
+------------------------------------------------------------------------
+Acceder a propiedades del objeto mediante una variable
+
+Ejemplo:
+
+var resultados =  {
+    
+    1: "nora256",
+    2: "gino577",
+    3: "estef543",
+    4: "kiara566"
+    
+};
+
+
+var posicion = 2;
+
+console.log(resultados[posicion]);
+
+------------------------------------------------------------------------
+Actualizar valor de las propiedades 
+
+Ejemplo :
+
+var mochila = {
+    
+    tamano : "mediana",
+    color  : "rojo",
+    contenido : ["botella de agua", "red bull", "lapiz"],
+    marca : "puma"
+};
+
+console.log(mochila.color)
+
+mochila.color = "azul"
+console.log(mochila.color)
+
+mochila.contenido.push("cuaderno");
+console.log(mochila.contenido);
+
+mochila["contenido"] = []; 
+
+console.log(mochila["contenido"]);
+
+------------------------------------------------------------------------
+Agregar propiedades a un objeto
+
+Ejemplo:
+
+var curso = {
+    
+    titulo : "Aprende JS desde cero",
+    idioma : "Español",
+    duracion : 30
+}
+
+curso.vistas = "65 K"; //Agregando propiedad "vistas"
+curso["vistas"] = "65 K"; //Agregando propiedad "vistas" con nomenclatura de corchete
+
+console.log(curso["vistas"]);
+
+
+------------------------------------------------------------------------
+Eliminar propiedades de un objeto
+
+var curso = {
+    
+    titulo : "Aprende JS desde cero",
+    idioma : "Español",
+    duracion : 30
+}
+
+delete curso["duracion"] ; //delete curso.duracion
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------
+Verificar propiedades
+
+//Verificar propiedades
+
+var miCuaderno = {
+    color : "verde",
+    categoria : 3,
+    precio : 4.65
+    
+};
+
+console.log(miCuaderno.hasOwnProperty("propiedad_objeto"));
+El metodo hasOwnProperty verifica si una propiedad le pertenece a un objeto
+
+
+Ejemplo de aplicacion del metodo en un condicional 
+
+//Verificar propiedades 
+function verificarPropiedad(obj,propiedad){
+    if (obj.hasOwnProperty(propiedad)){
+        return "Propiedad: " + obj[propiedad];
+       
+        
+    } else {
+        return "La propiedad no pertenece al objeto";
+    }
+    
+    
+};
+
+var miDistro = {
+    
+    nombre : "Parrot",
+    derivado : "Debian",
+    especialidad : "Ethical Hacking"
+};
+
+
+console.log(verificarPropiedad(miDistro,"nombre"));
+
+
+
+---------------------------------------------------------------------------
+
+
+Trabajando con arreglos y objetos
+
+var ordenesDePizzas = [
+    
+        {
+            tipo : "margarita",
+            tamaño : "individual",
+            precio : 5.67,
+            topping: ["extra queso","champiñones","piña"],
+            paraLlevar : true
+            
+        },
+        
+        {
+            tipo : "cuatro quesos ",
+            tamaño : "familiar",
+            precio : 18.34,
+            topping: ["extra queso","pimenton"],
+            paraLlevar : false
+            
+            
+        },
+        
+        {
+            tipo : "napolitana ",
+            tamaño : "individual",
+            precio : 6.78,
+            topping: [],
+            paraLlevar : true
+            
+            
+        }
+        
+        
+    
+];
+
+console.log(ordenesDePizzas[2]["tipo"]);
+
+--------------------------------------------------------------------------------
+Objetos anidados
+
+var miReceta = {
+    
+    descripcion : "mi postre favorito",
+    costo : 15.6 ,
+    ingredientes : {
+        masa : { harina : "100 grs ", sal : "1 cucharadita", agua: "1 taza"},
+        
+        cobertura : {azucar : "120 grs", chocolate : "4 cucharadas", mantequilla : "200 grs"}
+        
+    }
+}
+
+console.log(miReceta["ingredientes"]["cobertura"]);
+
+
+
+
+-------------------------------------------------------------------------------
+Comprobar si una cadena esta vacia
+
+typeof cadena == "string" --- metodo que verifica si un dato es una cadena
+
+cadena.lenght  ---- devuelve la longitud de la cadena o el arreglo
+
+Metodos para convertir texto a minusculas o viceversa
+
+toUpperCase()= convierte una cadena a mayusculas
+toLowerCase() = convierte una cadena a minusculas
+
+---------------------------------------------------------------------------------Mini Proyecto
+// Mini Proyecto
+/*
+Tenemos un objeto que representa parte de una coleccion de 
+albumes musicales.
+
+Cada album tiene un numero de identificacion unico(id)
+asociado a otras propiedades.
+
+No todos los albumes tienen la informacion completa.
+
+*/
+
+
+var coleccionDiscos = {
+    7853: {
+        tituloDelAlbum : "Bee Gees Greatest",
+        artista : "Bee Gees",
+        canciones : ["Stayin Alive"]
+        
+    },
+    
+    5439: {
+        tituloDelAlbum : "ABBA Gold"
+        
+        
+    }
+}
+
+/* Define una funcion actualizarDiscos que tome los siguientes parametros:
+    - discos (el objeto que representa la coleccion de discos).
+    - id
+    - propiedad ("artista o canciones")
+    -valor
+    
+    Tu meta es completar la funcion implementando las siguientes reglas
+    para modificar el objeto pasado a la funcion:
+    
+    - Si "valor" es una cadena vacia, elimina la propiedad
+        del album correspondiente.
+        
+    - Si propiedad es igual a la cadena de caracteres "canciones" pero el album no tiene una propiedad llamada "canciones", crea un arreglo vacio y agrega "valor" a ese arreglo.
+    
+    - Si propiedad es igual a la cadena de caracteres "canciones" y "valor" no es una cadena vacia, agrega "valor" al final del arreglo de canciones del album correspondiente.
+    
+    
+    - Si "valor" no es una cadena vacia y propiedad no es igual a canciones , asigna el valor del parametro "valor" a la propiedad
+    
+    - Si la propiedad no existe, debes crearla y asignar este valor.
+
+*/
+
+function actualizarDiscos(discos,id,propiedad,valor){
+    
+    if (valor == ""){
+        delete discos[id][propiedad]
+    } else if (propiedad == "canciones" ){
+        discos[id][propiedad] = [];
+        discos[id][propiedad].unshift(valor);
+        
+    } else if ( propiedad != "canciones" && valor.lenght > 0 ){
+        discos[id][propiedad] = valor;
+    }
+    
+    
+};
+
+
+
+console.log(coleccionDiscos[7853].tituloDelAlbum);
+actualizarDiscos(coleccionDiscos,7853,"tituloDelAlbum","");
+console.log(coleccionDiscos[7853].tituloDelAlbum);
+
+
+-------------------------------------------------------------------------------
+Ciclo while
+
+while (condicion){
+
+	//Bloque codigo
+}
+
+Ejemplo:
+var miArreglo=[]
+var i = 0;
+
+while(i<10){
+    
+    miArreglo.push(i);
+    i++;
+   
+    
+}
+
+ console.log(miArreglo);
+
+
+--------------------------------------------------------------------------------
+Ciclo For (Se utiliza cuando sabemos cuantas iteraciones seran necesarias)
+
+for(variable;condicion;incremento/decremento){
+
+
+	//Bloque codigo
+
+
+}
+
+
+Ejemplo :
+	var miArreglo=[];
+	var i;
+	for(i=0;i<10;i++){
+    
+    	miArreglo.push(i);
+    
+    
+}
+
+console.log(miArreglo)
+
+
+Ejemplo 2:
+	var miArreglo=[];
+
+	for( i=0;i<10;i+= 4 // i = i + 4){
+    
+    	miArreglo.push(i);
+    
+    
+	}
+
+console.log(miArreglo)
+
+
+
+
+Ejemplo 3: 
+	var miArreglo=[];
+
+	for(let i=2;i <= 26;i++){
+    
+    		if(i % 2 == 0) {
+    
+        	miArreglo.push(i);
+    	}
+    
+	}
+
+console.log(miArreglo);
+
+
+
+
+Ejemplo 4:
+
+	var lenguajesProgramacion=["JavaScript", "Python", "Java", "C++"];
+
+	for(i=0;i < lenguajesProgramacion.length; i++){
+    
+    	console.log(lenguajesProgramacion[i].toUpperCase());
+   
+    
+	}
+
+
+
+readline() = lee una entrada de usuario y la almacena en una variable
+Ejemplo: let r = readline();
+
+
+COdigos hackerranck
+
+Day 1: Let and Const
+function main() {
+    // Write your code here. Read input using 'readLine()' and print output using 'console.log()'.
+    const PI=Math.PI; 
+    let r = readLine();
+    // Print the area of the circle:
+    let area=PI * Math.pow(r,2);
+    
+    // Print the perimeter of the circle:
+    let perimeter=2*PI * r;
+   
+    console.log(area);
+    console.log(perimeter);
+    try {    
+        // Attempt to redefine the value of constant variable PI
+        PI = 0;
+        // Attempt to print the value of PI
+        console.log(PI);
+    } catch(error) {
+        console.error("You correctly declared 'PI' as a constant.");
+    }
+}
+
+
+
+
+
+Day 1 : Functions
+
+function factorial(n) {
+    let resultado = 1;
+    for (var i = 1; i <= n; i++) {
+        resultado *= i;
+    }
+    return result;
+}
+
+
+
+Day 2: Loops
+function vowelsAndConsonants(s) {
+    for (let i=0;i<s.length;i++){
+        
+        if(s[i] =="a" || s[i]=="e" || s[i]=="i" || s[i]=="o"  || s[i]=="u"){
+            console.log(s[i]);            
+        }
+    }
+        
+        for (let i=0;i<s.length;i++){
+        if (s[i] !="a" && s[i]!="e" && s[i]!="i" && s[i]!="o"  && s[i]!="u"){
+            console.log(s[i]);
+        }
+    }   
+}
+
+
+
+
+Day 2: Conditional Statements: If-Else
+
+function getGrade(score) {
+    let grade;
+    // Write your code here
+    
+    if(score > 25 && score <=30){
+        grade="A";
+    }
+    
+    
+    else if (score > 20 && score <=25){
+        grade="B";
+    }
+    
+    
+    else if (score > 15 && score <=20){
+        grade="C";
+    }
+    
+    else if (score > 10 && score <=15){
+        grade="D";
+        
+    }
+    
+    else if (score > 5 && score <=10){
+        grade="E";
+    }
+    
+    else if (score >0 && score <=5){
+        grade="F";
+    }
+    return grade;
+}
+
+
+
+
+
+Day 2: Conditional Statements: Switch
+
+function getLetter(s) {
+    let letter;
+    // Write your code here
+    switch(true){
+        
+        case "aeiou".includes(s[0]):
+            
+            letter="A";
+        break;
+        
+        case "bcdfg".includes(s[0]):
+        
+            letter="B";
+        break;
+    
+        case "hjklm".includes(s[0]):
+       
+            letter="C";
+        break;    
+          
+        case "npqrstvwxyz".includes(s[0]):
+        
+            letter="D";
+            
+        
+    }
+    return letter;
+}
+
+
+
+
+Day 3: Arrays
+function getSecondLargest(nums) {
+    // Complete the function
+    let largest ,second;
+    largest=second = Number.MIN_VALUE
+    for(let i=0; i < nums.length; i++){
+      if(nums[i] > largest){  
+        second=largest;
+        largest=nums[i];
+      }
+    else {
+        if(nums[i] > second && nums[i] !==largest)
+            second=nums[i];
+        }
+    }
+    return second;
+
+}
+
+
+
+Day 3: Try,Catch, and Finally
+
+function reverseString(s) {
+    try{
+       s=s.split("").reverse().join("") 
+    }catch(error){
+        console.log(error.message);
+        
+    } finally{
+        console.log(s);
+    }
+    
+}
+
+
+Day 3: Throw
+
+function isPositive(a) {
+    if(a > 0 ){
+        return "YES";
+    }else if(a == 0){
+            
+    throw new Error("Zero Error");
+    }else{ 
+        throw new Error("Negative Error");
+    }
+}
+
+
+
+Day 4 : Create a Rectangle Object
+
+function Rectangle(a, b) {
+    
+        var object={
+            length:a,
+            width:b,
+            perimeter:2*(a+b),
+            area:a*b
+        }
+        
+        return object;
+        
+    
+    
+}
+
+
+Day 4: Count Objects
+
+function getCount(objects) {
+    var n=0;
+    for(let i=0;i<objects.length;i++){
+        if(objects[i].x==objects[i].y){
+            
+         n++;
+            
+    }
+    
+    }
+    
+    return n;   
+
+}
+
+Day 4: Classes
+
+class Polygon {
+    constructor(array){
+        this.arreglo=array;
+    } 
+    perimeter(){
+        
+        var suma=0;
+        for(let i=0;i<this.arreglo.length;i++){
+            suma+=this.arreglo[i];   
+        }
+        return suma;
+    }
+    
+
+ }
