@@ -142,3 +142,166 @@ function main() {
     }
 
 
+    function getGrade(score) {
+        let grade;
+        // Write your code here
+        if(score > 25 && score <= 30){
+            grade = "A";
+        }else if(score > 20 && score <= 25){
+            grade = "B"
+        }else if(score > 15 && score <= 20){
+            grade = "C"
+        }else if(score > 10 && score <= 15){
+            grade = "D"
+        }else if(score > 5 && score <= 10){
+            grade = "E"
+        }else {
+            grade = "F"
+        }
+        return grade;
+    }
+
+
+
+
+    function getLetter(s) {
+        let letter;
+        let i;
+        // Write your code here
+        switch(s.charAt(i)){
+            case ('a' || 'e' || 'i' || 'o' || 'u'):
+                letter = 'A';
+                break;
+            case ('b' || 'c' || 'd' || 'f' || 'g'):
+                letter = 'B';
+                break;
+            case ('h' || 'j' || 'k' || 'l' || 'm'):
+                letter = 'C';
+                break;
+            default:
+                letter = "D"
+                break;
+        }
+        return letter;
+    }
+
+
+    /*
+     * Complete the vowelsAndConsonants function.
+     * Print your output using 'console.log()'.
+     */
+
+    function vowelsAndConsonants(s) {
+        for (let i = 0; i < s.length; i++) {
+            if ("aeiou".includes(s[i])) console.log(s[i]);
+        }
+
+        for (let i = 0; i < s.length; i++) {
+            if (!"aeiou".includes(s[i])) console.log(s[i]);
+        }
+    }
+
+
+    /**
+     *   Return the second largest number in the array.
+     *   @param {Number[]} nums - An array of numbers.
+     *   @return {Number} The second largest number in the array.
+     **/
+    function getSecondLargest(nums) {
+        let arreglo = nums.sort((a, b) => b - a);
+
+        let max = arreglo[0];
+
+        for (let i = 1; i < arreglo.length; i++) {
+            if (arreglo[i] < max) {
+                return arreglo[i];
+            }
+
+        }
+
+    }
+
+    /*
+     * Complete the reverseString function
+     * Use console.log() to print to stdout.
+     */
+    function reverseString(s) {
+
+        try {
+            console.log(s.split('').reverse().join(''));
+        }
+        catch (error){
+
+            console.log(error.message);
+            console.log(s);
+
+        }
+
+    }
+
+
+    function isPositive(a) {
+        if (a>0){
+            return "YES";
+        }
+
+        else if (a<0){
+            throw new Error ("Negative Error");
+        }
+
+        else {
+            throw new Error ("Zero Error");
+        }
+
+    }
+
+
+    /*
+     * Complete the Rectangle function
+     */
+    function Rectangle(a, b) {
+
+        this.length = a;
+        this.width = b;
+
+        this.perimeter = 2 * (a+b);
+        this.area = a*b;
+
+    }
+
+
+    function getCount(objects) {
+        let cantidad = 0;
+
+        for (let i = 0; i < objects.length; i++) {
+            const arr = Object.values(objects[i]);
+            if (arr[0] == arr[1]) {
+                cantidad++;
+            }
+        }
+
+        return cantidad;
+    }
+
+
+
+    /*
+     * Implement a Polygon class with the following properties:
+     * 1. A constructor that takes an array of integer side lengths.
+     * 2. A 'perimeter' method that returns the sum of the Polygon's side lengths.
+     */
+
+    class Polygon{
+        constructor(arr){
+            this.arr = arr;
+        }
+
+        perimeter(){
+            let suma = 0;
+            for(let i=0;i<this.arr.length;i++){
+                suma+=this.arr[i];
+            }
+            return suma;
+        }
+    }
+
