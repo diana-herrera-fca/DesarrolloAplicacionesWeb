@@ -76,7 +76,29 @@ function factorial(n) {
 
 --Dia dos
 
+function getLetter(s) {
+    let letter;
+    let firstChar = s[0].toLowerCase();
 
+    switch (true) {
+        case 'aeiou'.includes(firstChar):
+            letter = 'A';
+            break;
+        case 'bcdfg'.includes(firstChar):
+            letter = 'B';
+            break;
+        case 'hjklm'.includes(firstChar):
+            letter = 'C';
+            break;
+        case 'npqrstvwxyz'.includes(firstChar):
+            letter = 'D';
+            break;
+        default:
+            letter = 'Desconocido';
+    }
+
+    return letter;
+}
 
 --Dia dos
 
@@ -101,7 +123,113 @@ function getGrade(score) {
 
 --Dia dos
 
+function vowelsAndConsonants(s) {
+    let vowels = "aeiou";
+    let consonants = "bcdfghjklmnpqrstvwxyz";
 
- */
+    for (const letter of s) {
+        if (vowels.includes(letter)) {
+            console.log(letter);
+        }
+    }
+
+
+    for (const letter of s) {
+        if (consonants.includes(letter)) {
+            console.log(letter);
+        }
+    }
+}
+
+--Día tres
+
+function getSecondLargest(nums) {
+    // Complete the function
+    let first = -Infinity;
+    let second = -Infinity;
+
+    for (let num of nums) {
+        if (num > first) {
+            second = first;
+            first = num;
+        } else if (num > second && num < first) {
+            second = num;
+        }
+    }
+
+    return second === -Infinity ? null : second;
+}
+
+--Día tres
+
+function getSecondLargest(nums) {
+    // Complete the function
+    let first = -Infinity;
+    let second = -Infinity;
+
+    for (let num of nums) {
+        if (num > first) {
+            second = first;
+            first = num;
+        } else if (num > second && num < first) {
+            second = num;
+        }
+    }
+
+    return second === -Infinity ? null : second;
+}
+
+--Día tres
+
+ function isPositive(a) {
+    if (a > 0)
+        {
+            return "YES";
+        }
+    else if (a === 0)
+        {
+            throw new Error("Zero Error");
+        }
+    else if (a < 0)
+        {
+            throw new Error("Negative Error");
+        }
+}
+
+--Día cuatro
+
+function Rectangle(a, b) {
+
+    this.length = a;
+    this.width = b;
+    this.perimeter = 2 * (a+b);
+    this.area = a * b;
+    }
+
+--Día cuatro
+
+function getCount(objects) {
+    let count = 0;
+
+    for (let obj of objects) {
+        if (obj.x === obj.y) {
+            count++;
+        }
+    }
+
+    return count;
+}
+
+--Día cuatro
+
+class Polygon {
+    constructor(heights) {
+        this.sides = heights;
+    }
+
+    perimeter() {
+        return this.sides.reduce((sum, side) => sum + side, 0);
+    }
+}
 
  */
