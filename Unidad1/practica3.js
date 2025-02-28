@@ -344,3 +344,94 @@ function main() {
             return letter;
         }
 /*8*/
+        function vowelsAndConsonants(s) {
+
+
+            let str = s.replace(/[^aeiou]/gi, '') + s.replace(/[aeiou]/gi, '');
+
+            for(var i of str)
+            {console.log(i);}
+        }
+/*9*/
+        function getSecondLargest(nums) {
+            // Complete the function
+            let largest = nums[0];
+            let secondLargest = nums[0];
+
+            for (let i = 1; i < nums.length; i++) {
+                if (nums[i] > largest) {
+                    secondLargest = largest;
+                    largest = nums[i];
+                    continue;
+                }
+
+                if ((nums[i] > secondLargest) && (nums[i] < largest)) {
+                    secondLargest = nums[i];
+                }
+            }
+
+            return secondLargest;
+        }
+/*10*/
+
+        function reverseString(s) {
+            try {
+                var strArr = s.split('');
+                strArr.reverse();
+                var joinStr = strArr.join('');
+                console.log(joinStr);
+            }catch(error) {
+                console.log(error.message);
+                console.log(s);
+            } finally {
+                //noting
+            }
+        }
+/*11*/
+        function isPositive(a) {
+            if(a > 0)
+                return 'YES';
+            else if(a === 0)
+                return 'Zero Error';
+            else
+                return 'Negative Error';
+
+        }
+/*12*/
+        function Rectangle(a, b) {
+            this.length = a;
+            this.width = b;
+            this.area = a*b;
+            this.perimeter = 2*(a+b);
+        }
+/*13*/
+        function getCount(objects) {
+            var counter = 0;
+
+            for(var object of objects) {
+                if(object.x === object.y) {
+                    counter++;
+                }
+            }
+
+            return counter;
+        }
+/*14*/
+        class Polygon {
+            constructor(params) {
+                this.sides = params;
+            }
+
+            perimeter() {
+                let sum = 0;
+
+                for (let i = 0; i < this.sides.length; i++) {
+                    sum += this.sides[i];
+                }
+
+                return sum;
+            }
+
+
+        }
+/*15*/
