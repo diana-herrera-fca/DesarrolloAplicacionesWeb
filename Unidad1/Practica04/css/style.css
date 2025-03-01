@@ -5,13 +5,18 @@ body {
     font-family: Arial, sans-serif;
     margin: 5%;
     padding: 0;
+    padding-bottom: 70px;
     background-color: #d8d6c9;
+    min-height: 100vh;
+    overflow-y: auto;
 }
 
+/* Contenedor principal */
 .main-content {
     flex: 1;
 }
 
+/* Footer */
 footer {
     font-size: smaller;
     position: fixed;
@@ -19,15 +24,18 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
+    height: 70px;
     background-color: #333;
     color: white;
     text-align: center;
     padding: 5px;
+    box-sizing: border-box;
 }
 
-button{
+/* Estilos del botón */
+button {
     padding: 2%;
-    background-color: #4CAF50;
+    background-color: rgba(255, 215, 0, 0.8);
     color: white;
     border: none;
     border-radius: 5px;
@@ -36,17 +44,18 @@ button{
 }
 
 /* Efecto hover */
-button:hover{
-    background-color: #45a049;
+button:hover {
+    background-color: #414241;
     transform: scale(1.1);
 }
 
 /* Efecto active */
-button:active{
-    background-color: #3e8e41;
+button:active {
+    background-color: #6b6c6b;
     transform: scale(1);
 }
 
+/* Estilos para el contenedor  */
 .container {
     text-align: justify;
     display: flex;
@@ -57,10 +66,13 @@ button:active{
     background-color: rgba(0, 0, 0, 0.3);
     padding: 2%;
     border-radius: 5px;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    max-width: 1200px;
 }
 
+/* Estilos de los encabezados dentro del contenedor */
 .container h2 {
     text-align: left;
     color: rgba(255, 215, 0, 0.8);
