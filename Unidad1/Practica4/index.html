@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio</title>
+    <style>
+        button {
+            padding: 100px 200px;
+            font-size: 160px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+
+        body {
+            text-align: center;
+        }
+
+        p{
+            font-size: 100px;
+        }
+    </style>
+</head>
+<body>
+<h1>Ejercicio: Página con Cambio de Color y Contador de Clics</h1>
+<button id="colorButton">Cambiar Color</button>
+<p id="counter">Clics: 0</p>
+
+<script>
+    // Generar el selector para el counter y botón
+    const button = document.getElementById("colorButton");
+    const counterDisplay = document.getElementById("counter");
+
+    // Recuperar contador de localStorage o inicializarlo en 0
+    let clickCount = localStorage.getItem("clickCount") ? parseInt(localStorage.getItem("clickCount")) : 0;
+
+    // Mostrar contador almacenado
+    counterDisplay.textContent = "Clics: " + clickCount;
+
+    // Evento para cambiar color y contar clics
+    button.addEventListener("click", function() {
+        // Generar color aleatorio
+        const randomColor = `#${Math.floor(Math.random()*16777215).toString(16)}`;
+
+        // Aplicar color al fondo
+        document.body.style.backgroundColor = randomColor;
+
+        // Aumentar contador
+        clickCount++;
+        counterDisplay.textContent = "Clics: " + clickCount;
+
+        // Guardar en localStorage
+        localStorage.setItem("clickCount", clickCount);
+    });
+</script>
+</body>
+</html>
