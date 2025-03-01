@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<head>
+
+  <title>Práctica 4</title>
+
+  <style>
+
+    h1 {
+      background: #1fabcd;
+      color: black;
+      text-align: center;
+      padding: 50px;
+
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 10px;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+
+<h1>Página con Cambio de Color y Contador de Clics</h1>
+
+<button id="colorButton">Cambiar Color</button>
+<p id="counter">Clics: 0</p>
+
+<script>
+  const button = document.getElementById("colorButton");
+  const counterDisplay = document.getElementById("counter");
+
+
+  let clickCount = localStorage.getItem("clickCount") ? parseInt(localStorage.getItem("clickCount")) : 0;
+
+  counterDisplay.textContent = "Clics: " + clickCount;
+  button.addEventListener("click", function() { clickCount++;
+    localStorage.setItem("clickCount", clickCount);
+    counterDisplay.textContent = "Clics: " + clickCount;
+
+    document.body.style.backgroundColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+  });
+
+
+</script>
+
+
+</body>
+</html>
+
