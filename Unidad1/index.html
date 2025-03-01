@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Cambio de Color</title>
+    <style>
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<button id="colorButton">Cambiar Color</button>
+<p id="counter">Clics: 0</p>
+
+<script>
+    const button = document.getElementById("colorButton");
+    const counterDisplay = document.getElementById("counter");
+
+    let clickCount = localStorage.getItem("clickCount") ? parseInt(localStorage.getItem("clickCount")) : 0;
+    counterDisplay.textContent = "Clics: " + clickCount;
+
+    button.addEventListener("click", function() {
+        const randomColor = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
+        document.body.style.backgroundColor = randomColor;
+
+        clickCount++;
+        counterDisplay.textContent = "Clics: " + clickCount;
+        localStorage.setItem("clickCount", clickCount);
+    });
+</script>
+</body>
+</html>
