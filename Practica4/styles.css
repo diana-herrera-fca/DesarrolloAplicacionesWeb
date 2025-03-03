@@ -1,0 +1,24 @@
+.button-color{
+    
+    font-size:15px;
+    padding: 12px;
+    cursor:pointer;
+    display:flex;
+    margin: auto;
+    border-radius:10px;
+    width: 90px;
+    height:90px;
+    font-family: 'Times New Roman', Times, serif;
+    
+   
+}
+
+div p {
+
+        text-align:center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size:smaller;
+}
+
+
+
